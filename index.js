@@ -1,12 +1,21 @@
-module.exports = function (prop_name, prop_val, cb) {
+module.exports = mixpanel;
+
+function mixpanel (config) {
+
+  this.key = config.key;
+  this.secret = config.secret;
+
+}
+
+mixpanel.prototype.get = function (prop_name, prop_val, cb) {
 
 	// connect
 
 	var Mixpanelist = require('mixpanelist');
 		
 	var config = {
-		"key": process.env.MIXPANEL_KEY,
-		"secret": process.env.MIXPANEL_SECRET
+		"key": this.key,
+		"secret": this.secret
 	};
 	
 	var mixpanelist = new Mixpanelist(config);
