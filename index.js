@@ -1,6 +1,6 @@
 // setup
 	
-	var Mixpanelist = require('mixpanelist');
+	var program = Mixpanelist = require('mixpanelist');
 		
 	var config = {
 		"key": process.env.MIXPANEL_KEY,
