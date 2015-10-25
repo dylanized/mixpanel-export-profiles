@@ -4,7 +4,7 @@ Exports Mixpanel profiles filtered by 1 parameter
 
 Usage:
 
-`
+```
 
 var mixpanelExportProfiles = require('mixpanel-export-profiles');
 
@@ -19,4 +19,4 @@ mixpanelExportProfiles("$email", "d@dylanized.com", function(profiles) {
 });
 
 
-`
+```
