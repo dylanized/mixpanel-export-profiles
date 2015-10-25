@@ -1,4 +1,4 @@
-# mixpanel-export-profiles
+# mixpanel-profiles
 
 Exports Mixpanel profiles filtered by 1 parameter
 
@@ -6,17 +6,26 @@ Usage:
 
 ```
 
-var mixpanelExportProfiles = require('mixpanel-export-profiles');
+var MixpanelProfiles = require('mixpanel-export-profiles');
 
-mixpanelExportProfiles("$email", "d@dylanized.com", function(profiles) {
+var config = {
+	"key": "xxx",
+	"secret": "xxx"
+};
 
-	if (typeof profiles == "array" && profiles.length > 0) {
-	
-		console.log(profiles);
+var profiles = new MixpanelProfiles(config);
+
+profiles.get("$email", "d@dylanized.com", function(result) {
+
+	if (typeof result == "array" && result.length > 0) {
 		
-	} else console.log(profiles);
+		// do stuff	
+		console.log(result);
+		
+	} else console.log(result);
 
 });
+
 
 
 ```
