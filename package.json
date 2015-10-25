@@ -1,13 +1,13 @@
 {
-  "name": "mixpanel-export-profiles",
+  "name": "mixpanel-profiles",
   "version": "1.0.0",
-  "description": "Exports Mixpanel profiles filtered by 1 parameter",
+  "description": "Export Mixpanel profiles filtered by parameter",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Dylan Hassinger <d@dylanized.com> (http://dylanized.com)",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "mixpanelist": "^1.1.2"
   }
