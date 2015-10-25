@@ -1,0 +1,11 @@
+{
+  "name": "mixpanel-export-profiles",
+  "version": "1.0.0",
+  "description": "Exports Mixpanel profiles filtered by 1 parameter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dylan Hassinger <d@dylanized.com> (http://dylanized.com)",
+  "license": "ISC"
+}
