@@ -1,5 +1,5 @@
 {
-  "name": "mixpanel-profiles",
+  "name": "mixpanel-export-profiles",
   "version": "1.0.0",
   "description": "Export Mixpanel profiles filtered by parameter",
   "main": "index.js",
