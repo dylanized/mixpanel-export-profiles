@@ -17,7 +17,7 @@ var profiles = new MixpanelProfiles(config);
 
 profiles.get("$email", "d@dylanized.com", function(result) {
 
-	if (typeof result == "array" && result.length > 0) {
+	if (typeof result == "object" && result.length > 0) {
 		
 		// do stuff	
 		console.log(result);
